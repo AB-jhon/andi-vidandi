@@ -1,0 +1,56 @@
+/* ============================================
+   ANDI VIDANDI — Footer
+   ============================================ */
+
+.footer {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 3rem;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--terra);
+  margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 2rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-nav button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-nav button:hover { color: var(--terra); }
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+}

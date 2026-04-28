@@ -1,0 +1,348 @@
+/* ============================================
+   ANDI VIDANDI — Secciones de contenido
+   ============================================ */
+
+/* --- ÉRASE UNA VEZ --- */
+.erase-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.erase-img {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(44, 36, 22, 0.15);
+}
+
+.erase-img img { width: 100%; display: block; }
+
+.erase-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(44, 36, 22, 0.75);
+  margin-bottom: 1.2rem;
+}
+
+.erase-text p strong {
+  color: var(--rust);
+  font-weight: 500;
+}
+
+/* --- DETRÁS DEL TELÓN --- */
+.telon-bg { background: var(--warm); }
+
+.telon-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.telon-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(44, 36, 22, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.telon-card::before {
+  content: '"';
+  position: absolute;
+  top: -0.5rem; left: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 8rem;
+  color: rgba(201, 123, 75, 0.1);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.telon-card p {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: rgba(44, 36, 22, 0.7);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* --- CUENTOS QUE SIENTEN --- */
+.cuentos-bg {
+  background: #008080fa;
+  color: white;
+}
+
+.cuentos-bg .section-title    { color: white; }
+.cuentos-bg .section-subtitle { color: var(--gold); }
+.cuentos-bg .section-tag      { color: var(--gold); background: rgba(246, 165, 40, 0.15); }
+
+.emotions-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+}
+
+.emotion-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.emotion-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+  border-color: rgba(239, 140, 0, 0.5);
+}
+
+.emotion-emoji  { font-size: 2.2rem; margin-bottom: 0.8rem; display: block; }
+
+.emotion-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--peach);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.emotion-desc {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+}
+
+.cuentos-prose {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cuentos-prose p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.cuentos-big-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--gold);
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+.cuentos-images {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 3rem auto 0;
+}
+
+.cuentos-images img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: filter 0.3s;
+}
+
+.cuentos-images img:hover { filter: brightness(1); }
+
+/* --- LO QUE PASA --- */
+.lopasa-bg { background-color: #BCD979; }
+
+.lopasa-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.lopasa-aside h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--rust);
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.lopasa-aside p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(44, 36, 22, 0.65);
+}
+
+.lopasa-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.lopasa-card {
+  background: white;
+  border: 1px solid rgba(201, 123, 75, 0.15);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+.lopasa-card:hover {
+  box-shadow: 0 8px 30px rgba(44, 36, 22, 0.1);
+  transform: translateY(-3px);
+  border-color: var(--peach);
+}
+
+.lopasa-icon { font-size: 1.8rem; margin-bottom: 1rem; display: block; }
+
+.lopasa-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.lopasa-card p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: rgba(44, 36, 22, 0.6);
+}
+
+/* --- NIÑOS Y ADULTOS --- */
+.ninos-bg { background: var(--forest); color: white; }
+.ninos-bg .section-title    { color: white; }
+.ninos-bg .section-subtitle { color: #c8e6c9; }
+.ninos-bg .section-tag      { color: #c8e6c9; background: rgba(200, 230, 201, 0.2); }
+
+.ninos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ninos-item {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.ninos-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+.ninos-item-icon { font-size: 3rem; margin-bottom: 1.2rem; display: block; }
+
+.ninos-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--mist);
+  margin-bottom: 0.8rem;
+}
+
+.ninos-item p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* --- CUÉNTAME TÚ --- */
+.cuentame-layout {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(44, 36, 22, 0.1);
+  margin-top: 3rem;
+}
+
+.form-group { margin-bottom: 1.5rem; text-align: left; }
+
+.form-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(44, 36, 22, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: var(--cream);
+  border: 1.5px solid rgba(201, 123, 75, 0.2);
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--ink);
+  transition: border 0.2s;
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus { border-color: var(--terra); }
+
+.form-submit {
+  width: 100%;
+  background: var(--red);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 60px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 0.04em;
+}
+
+.form-submit:hover {
+  background: var(--terra);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(197, 46, 46, 0.35);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .erase-layout,
+  .telon-layout,
+  .lopasa-layout  { grid-template-columns: 1fr; gap: 2rem; }
+  .emotions-grid  { grid-template-columns: repeat(3, 1fr); }
+  .cuentos-images { grid-template-columns: 1fr; }
+  .ninos-grid     { grid-template-columns: 1fr; }
+  .lopasa-cards   { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,33 @@
+/* ============================================
+   ANDI VIDANDI — Variables de diseño
+   ============================================
+   🟢 = aprobado por cliente
+   🔄 = pendiente de confirmar
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+
+    /* ---FONDOS--- */
+    --cream: rgba(255, 237, 216, 0.38); /* 🔄 fondo general */
+
+    /* ---CALIDOS--- */
+    --warm: #f6a429c7; /* 🔄 fondo sección Telón */
+    --peach: #14c90e; /* 🔄 Hover en cards */
+    --gold: #f7f306; /* 🔄 acentos sobre fondos oscuros */
+
+    /* ---ROJOS (CTAs y énfasis--- */
+    --terra: #b12424; /* 🔄 color principal de marca */
+    --rust: #b12424; /* 🔄 pendiente — mismo valor que terra por ahora */
+    --red:   #b12424;   /* 🔄 botones activos y formulario */
+
+    /* --- AZULES / VERDES FRÍOS --- */
+    --forest: #2e6a8f;  /* 🔄 fondo sección Niños */
+    --teal:   #2195a065;  /* 🔄 fondo sección Cuentos */
+    --ink:    #2e5d7a;  /* 🟢 texto principal y footer */
+
+    /* --- VERDES NATURALES --- */
+    --sage: #9DAD6F;    /* 🔄 decorativo */
+    --mist: #BCD979;    /* 🔄 fondo sección Lo que pasa */
+}

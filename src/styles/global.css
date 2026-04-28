@@ -1,0 +1,145 @@
+/* ============================================
+   ANDI VIDANDI — Estilos globales
+   ============================================ */
+
+@import './variables.css';
+
+/* --- Reset base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Cuerpo --- */
+body {
+  background: var(--cream);
+}
+
+/* --- Contenedor raíz --- */
+.andi-root {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* --- Sección genérica --- */
+.section {
+  padding: 6rem 3rem;
+  position: relative;
+  animation: fadeUp 0.6s ease both;
+}
+
+/* --- Encabezado de sección --- */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--terra);
+  background: rgba(201, 123, 75, 0.1);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.2rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--terra);
+}
+
+.section-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--rust);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* --- Botón CTA (reutilizable en toda la app) --- */
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: var(--red);
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 60px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.hero-cta:hover {
+  background: var(--terra);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(197, 46, 46, 0.35);
+}
+
+.hero-cta-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.hero-cta:hover .hero-cta-arrow {
+  transform: translateX(4px);
+}
+
+/* --- Bloque de cita (reutilizable) --- */
+.quote-block {
+  border-left: 3px solid var(--terra);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: rgba(239, 139, 0, 0.1);
+  border-radius: 0 8px 8px 0;
+}
+
+.quote-block p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--rust);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* --- Elemento decorativo --- */
+.leaf-deco {
+  position: absolute;
+  font-size: 6rem;
+  opacity: 0.05;
+  pointer-events: none;
+  line-height: 1;
+}
+
+/* --- Animación de entrada --- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .section { padding: 4rem 1.5rem; }
+}
